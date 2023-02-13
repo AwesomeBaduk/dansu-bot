@@ -1,0 +1,15 @@
+{
+  "name": "awesome-bot",
+  "version": "0.0.1",
+  "private": true,
+  "devDependencies": {
+    "shadow-cljs": "2.19.2"
+  },
+  "dependencies": {
+    "@discordjs/builders": "^0.15.0",
+    "@discordjs/rest": "^0.5.0",
+    "discord-api-types": "^0.33.5",
+    "discord.js": "^13.8.0",
+    "xhr2": "^0.2.1"
+  }
+}

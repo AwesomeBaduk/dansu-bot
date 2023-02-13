@@ -1,0 +1,9 @@
+;; shadow-cljs configuration
+{:source-paths ["src" "test"]
+ :dependencies [[cljs-http "0.1.46"]
+                [org.clojars.akiel/async-error "0.3"]]
+ :builds       {:bot {:target    :node-script
+                      :output-to "out/dansubot.js"
+                      :main      dansu-bot.core/main
+                      :devtools  {:before-load-async dansu-bot.core/stop
+                                  :after-load        dansu-bot.core/start}}}}
